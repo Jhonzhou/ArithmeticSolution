@@ -22,8 +22,6 @@ public class LongestPalindrome {
         PrintUtils.println(longestPalindrome(source));
     }
 
-
-
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 1) return "";
         int start = 0, end = 0;
@@ -69,12 +67,11 @@ public class LongestPalindrome {
         int end = s.length() - 1;
 
         while (start < end) {
-            if (s.charAt(start) == s.charAt(end)) {
-                start++;
-                end--;
-            } else {
+            if (s.charAt(start) != s.charAt(end)) {
                 return false;
             }
+            end--;
+            start++;
         }
         return true;
     }
