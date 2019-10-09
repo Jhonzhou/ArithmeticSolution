@@ -1,7 +1,5 @@
 package com.worker.bee.solution;
 
-import org.junit.Test;
-
 /**
  * 打印工具类
  */
