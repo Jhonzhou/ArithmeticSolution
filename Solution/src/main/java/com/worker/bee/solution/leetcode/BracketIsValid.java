@@ -4,10 +4,7 @@ import com.worker.bee.solution.PrintUtils;
 
 import org.junit.Test;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Queue;
-import java.util.Stack;
 
 /**
  * 20. 有效的括号
