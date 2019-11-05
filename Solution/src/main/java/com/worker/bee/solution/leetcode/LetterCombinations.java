@@ -27,7 +27,7 @@ public class LetterCombinations {
     @Test
     public void test() {
         String number = "23";
-        PrintUtils.println(Arrays.toString(letterCombinations(number).toArray()));
+        PrintUtils.println(Arrays.toString(letterCombinationsServer(number).toArray()));
     }
 
     private List<String> letterCombinations(String digits) {

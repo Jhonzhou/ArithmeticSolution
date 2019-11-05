@@ -21,8 +21,10 @@ import java.util.Arrays;
 public class TwoNumberSum {
     @Test
     public void test() {
-        ListNode l1 = toListNode(new int[]{9});
-        ListNode l2 = toListNode(new int[]{1, 9, 9, 9, 9, 9, 9, 9, 9, 9});
+//        ListNode l1 = toListNode(new int[]{9});
+//        ListNode l2 = toListNode(new int[]{1, 9, 9, 9, 9, 9, 9, 9, 9, 9});
+        ListNode l1 = toListNode(new int[]{2,4,3});
+        ListNode l2 = toListNode(new int[]{5,6,4});
 
         ListNode listNode = addTwoNumbers(l1, l2);
         PrintUtils.println(Arrays.asList(listNodeToArray(listNode)));

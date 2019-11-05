@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * 21. 合并两个有序链表
+ * 22. 括号生成
  * 题目描述：
  * <p>
  * &emsp;&emsp;给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。
