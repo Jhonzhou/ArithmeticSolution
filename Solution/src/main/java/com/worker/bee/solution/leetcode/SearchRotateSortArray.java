@@ -40,8 +40,8 @@ public class SearchRotateSortArray {
             if (nums[mid] == target) {
                 return mid;
             }
-            //左边是有序的
             if (nums[start] <= nums[mid]) {
+                //左边是有序的
                 if (nums[start] <= target && target < nums[mid]) {
                     end = mid - 1;
                 } else {
