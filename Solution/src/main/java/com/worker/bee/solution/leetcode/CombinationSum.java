@@ -65,30 +65,25 @@ public class CombinationSum {
         } else {
             preResult = new ArrayList<>();
         }
-        int pre = Integer.MAX_VALUE;
         for (int index = start; index < candidates.length; index++) {
             current = candidates[index];
-
-            if (current == pre) {
-                continue;
-            }
-            pre = current;
             if (current > target) {
                 return;
             }
             if (current == target) {
-                ArrayList<Integer> tempList = new ArrayList<>(preResult);
-                tempList.add(current);
-                resultList.add(tempList);
+                preResult.add(current);
+                resultList.add(new ArrayList<>(preResult));
+                preResult.remove(preResult.size() - 1);
                 break;
             }
 
-            List<Integer> tempList = new ArrayList<>(preResult);
-            tempList.add(current);
-            findResult(target - current, index, candidates, resultList, tempList);
+            preResult.add(current);
+            findResult(target - current, index, candidates, resultList, preResult);
+            preResult.remove(preResult.size() - 1);
         }
     }
-    public static class Server111{
+
+    public static class Server111 {
         public List<List<Integer>> combinationSum(int[] candidates, int target) {
             List<List<Integer>> res = new ArrayList<>();
             Arrays.sort(candidates);
@@ -110,6 +105,7 @@ public class CombinationSum {
             }
         }
     }
+
     public static class Server {
         private List<List<Integer>> res = new ArrayList<>();
         private int[] candidates;

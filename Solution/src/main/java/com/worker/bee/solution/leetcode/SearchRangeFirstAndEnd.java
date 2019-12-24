@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import sun.security.util.Length;
 
 /**
  * 34. 在排序数组中查找元素的第一个和最后一个位置
