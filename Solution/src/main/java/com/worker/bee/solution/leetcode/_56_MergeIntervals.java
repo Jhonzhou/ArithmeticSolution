@@ -74,6 +74,7 @@ public class _56_MergeIntervals {
             });
             temp = intervals[0];
             int preEnd = 1;
+
             for (int x = 1; x < intervals.length; x++) {
                 if (temp[1] >= intervals[x][0]) {
                     //合并
@@ -82,11 +83,48 @@ public class _56_MergeIntervals {
                     }
                 } else {
                     intervals[preEnd] = intervals[x];
-                    temp=intervals[x];
+                    temp = intervals[x];
                     preEnd++;
                 }
             }
             return Arrays.copyOf(intervals, preEnd);
+        }
+
+        public int[][] merge222(int[][] intervals) {
+            if (intervals.length <= 1) {
+                return intervals;
+            }
+            //数组排序
+            int[] temp;
+//            for (int x = 0; x < intervals.length; x++) {
+//                for (int y = x + 1; y < intervals.length; y++) {
+//                    if (intervals[x][0] > intervals[y][0]) {
+//                        temp = intervals[y];
+//                        intervals[y] = intervals[x];
+//                        intervals[x] = temp;
+//                    }
+//                }
+//            }
+            Arrays.sort(intervals, new Comparator<int[]>() {
+                @Override
+                public int compare(int[] ints, int[] t1) {
+                    return ints[0]-t1[0];
+                }
+            });
+            temp = intervals[0];
+            int preIndex = 0;
+            for (int index = 1; index < intervals.length; index++) {
+                if (intervals[index][0] <= intervals[preIndex][1]) {
+                    //合并
+                    if (intervals[index][1]> intervals[preIndex][1]) {
+                        intervals[preIndex][1] = intervals[index][1];
+                    }
+                } else {
+                    preIndex++;
+                    intervals[preIndex] = intervals[index];
+                }
+            }
+            return Arrays.copyOf(intervals, preIndex+1);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

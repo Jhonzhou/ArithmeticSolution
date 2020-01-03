@@ -11,6 +11,21 @@ public class ListNode {
         val = x;
     }
 
+    public static ListNode createByInt(int numbers) {
+        ListNode head = null;
+        ListNode temp = null;
+        for (int index = 1; index <= numbers; index++) {
+            if (temp == null) {
+                temp = new ListNode(index);
+                head = temp;
+            } else {
+                temp.next = new ListNode(index);
+                temp = temp.next;
+            }
+        }
+        return head;
+    }
+
     public static ListNode createByArray(int[] numbers) {
         ListNode head = null;
         ListNode temp = null;
@@ -25,7 +40,8 @@ public class ListNode {
         }
         return head;
     }
-    public static List<Integer> toList(ListNode head){
+
+    public static List<Integer> toList(ListNode head) {
         List<Integer> resultList = new ArrayList<>();
         while (head != null) {
             resultList.add(head.val);
