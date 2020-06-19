@@ -12,10 +12,11 @@ import java.util.List;
  * 15. 三数之和
  * 题目描述：
  * <p>
- * &emsp;&emsp;给定一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？找出所有满足条件且不重复的三元组。
+ * &emsp;&emsp;给定一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，
+ * 使得 a + b + c = 0 ？找出所有满足条件且不重复的三元组。
  * 注意：答案中不可以包含重复的三元组。
  */
-public class ThreeSum {
+public class _15_ThreeSum {
     @Test
     public void test() {
 //        int[] ints = new int[]{-4, -1, -1, 0, 1, 2};

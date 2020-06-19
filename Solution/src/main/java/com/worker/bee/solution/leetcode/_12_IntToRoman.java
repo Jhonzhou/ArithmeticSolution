@@ -28,14 +28,30 @@ import org.junit.Test;
  * C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
  * 给定一个整数，将其转为罗马数字。输入确保在 1 到 3999 的范围内。
  */
-public class IntToRoman {
+public class _12_IntToRoman {
     @Test
     public void test() {
-        int num = 7;
+        int num = 10;
         PrintUtils.println(intToRoman(num));
     }
 
     public String intToRoman(int num) {
+        StringBuilder result = new StringBuilder();
+        int[] values = new int[]{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        String[] strings = new String[]{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        for (int index = 0; index < values.length && num > 0; index++) {
+            while (values[index] <= num) {
+                num = num - values[index];
+                result.append(strings[index]);
+            }
+        }
+        return result.toString();
+    }
+
+    /**
+     * 土办法
+     */
+    public String intToRomanSelf(int num) {
         if (num > 3999) {
             return "error";
         }

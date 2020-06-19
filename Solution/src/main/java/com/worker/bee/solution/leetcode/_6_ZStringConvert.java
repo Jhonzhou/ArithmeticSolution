@@ -13,7 +13,7 @@ import java.util.List;
  * 题目描述：
  * 将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。
  */
-public class ZStringConvert {
+public class _6_ZStringConvert {
     @Test
     public void test() {
         String s = "LEETCODEISHIRING";

@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * 无重复字符的最长子串
  * 题目描述：给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度
  */
-public class FindTheLongerNoRepeatStringLength {
+public class _3_FindTheLongerNoRepeatStringLength {
     @Test
     public void test() {
         String test = "aabaab!bb";

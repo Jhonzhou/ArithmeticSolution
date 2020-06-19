@@ -1,6 +1,5 @@
 package com.worker.bee.solution.leetcode;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.worker.bee.solution.PrintUtils;
 import com.worker.bee.solution.bean.ListNode;
 

@@ -13,8 +13,9 @@ import org.junit.Test;
  * 输入: "babad"
  * 输出: "bab"
  * 注意: "aba" 也是一个有效答案。
+ * // Related Topics 字符串 动态规划
  */
-public class LongestPalindrome {
+public class _5_LongestPalindrome {
     @Test
     public void test() {
         String source = "c";

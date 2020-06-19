@@ -1,6 +1,5 @@
 package com.worker.bee.solution.leetcode;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
 import com.worker.bee.solution.bean.TreeNode;
 
 import java.util.ArrayList;

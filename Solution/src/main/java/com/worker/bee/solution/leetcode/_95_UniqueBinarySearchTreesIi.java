@@ -1,14 +1,10 @@
 package com.worker.bee.solution.leetcode;
 
 import com.worker.bee.solution.PrintUtils;
-import com.worker.bee.solution.bean.ListNode;
 import com.worker.bee.solution.bean.TreeNode;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
-import sun.reflect.generics.tree.Tree;
 
 /**
  * 题目标题:
@@ -25,13 +21,13 @@ public class _95_UniqueBinarySearchTreesIi {
         List<TreeNode> treeNodes = solution.generateTrees(3);
         PrintUtils.println("*******************result size ：" + treeNodes.size());
         for (TreeNode treeNode : treeNodes) {
-            PrintUtils.printList(TreeNode.beforPrintTreeNode(treeNode));
+            PrintUtils.printList(TreeNode.beforePrintTreeNode(treeNode));
         }
         SolutionServer solutionServer = new _95_UniqueBinarySearchTreesIi().new SolutionServer();
        treeNodes = solutionServer.generateTrees(3);
         PrintUtils.println("*******************result size ：" + treeNodes.size());
         for (TreeNode treeNode : treeNodes) {
-            PrintUtils.printList(TreeNode.beforPrintTreeNode(treeNode));
+            PrintUtils.printList(TreeNode.beforePrintTreeNode(treeNode));
         }
     }
 //二叉查找树（Binary Search Tree），

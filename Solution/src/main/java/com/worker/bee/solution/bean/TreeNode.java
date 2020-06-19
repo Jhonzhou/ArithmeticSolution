@@ -3,7 +3,6 @@ package com.worker.bee.solution.bean;
 import java.util.ArrayList;
 import java.util.List;
 
-import sun.reflect.generics.tree.Tree;
 
 /**
  * @author: JhonZhou
@@ -14,6 +13,12 @@ public class TreeNode {
 
     public TreeNode(int x) {
         val = x;
+    }
+
+    public TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 
     public int val;
@@ -32,7 +37,7 @@ public class TreeNode {
         return current;
     }
 
-    public static List<String> beforPrintTreeNode(TreeNode root) {
+    public static List<String> beforePrintTreeNode(TreeNode root) {
         List<String> resultList = new ArrayList<>();
         beforeRecursive(root, resultList);
         return resultList;

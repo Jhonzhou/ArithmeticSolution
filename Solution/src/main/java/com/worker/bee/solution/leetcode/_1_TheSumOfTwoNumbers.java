@@ -9,7 +9,7 @@ import java.util.HashMap;
 /**
  * 两数之和
  */
-public class TheSumOfTwoNumbers {
+public class _1_TheSumOfTwoNumbers {
 
     public void questions() {
         /*

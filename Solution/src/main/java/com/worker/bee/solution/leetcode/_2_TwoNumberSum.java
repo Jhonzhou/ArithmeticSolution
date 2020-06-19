@@ -18,7 +18,7 @@ import java.util.Arrays;
  * 输出：7 -> 0 -> 8
  * 原因：342 + 465 = 807
  */
-public class TwoNumberSum {
+public class _2_TwoNumberSum {
     @Test
     public void test() {
 //        ListNode l1 = toListNode(new int[]{9});

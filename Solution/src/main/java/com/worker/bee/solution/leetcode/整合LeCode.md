@@ -4,7 +4,7 @@
 
 &emsp;&emsp;给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标
 
-[解题源码](TheSumOfTwoNumbers.java)
+[解题源码](_1_TheSumOfTwoNumbers.java)
 ### 两数平方和()
 题目描述：
 
@@ -14,24 +14,27 @@
 题目描述 ：
 
 &emsp;&emsp;给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。您可以假设除了数字 0 之外，这两个数都不会以 0 开头
-[解题源码](TwoNumberSum.java)
+[解题源码](_2_TwoNumberSum.java)
 ### 无重复字符的最长子串(3)
 题目描述：
 
 &emsp;&emsp;给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度
-[解题源码](FindTheLongerNoRepeatStringLength.java)
+[解题源码](_3_FindTheLongerNoRepeatStringLength.java)
 ### 寻找两个有序数组的中位数(4)
 题目描述：
 
 &emsp;&emsp;给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
 请你找出这两个有序数组的中位数，并且要求算法的时间复杂度为 O(log(m + n))。
 你可以假设 nums1 和 nums2 不会同时为空。
-[解题源码](FindMedianSortedArrays.java)
+
+Related Topics 数组 二分查找 分治算法
+[解题源码](_4_FindMedianSortedArrays.java)
 ### 最长回文子串(5)
 题目描述：
 
 &emsp;&emsp;给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000
-[解题源码](LongestPalindrome.java)
+// Related Topics 字符串 动态规划
+[解题源码](_5_LongestPalindrome.java)
 ### 最长子序列(524)
 题目描述：
 
@@ -41,22 +44,23 @@
 题目描述：
 
 &emsp;&emsp;将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。
-[解题源码](ZStringConvert.java)
+Related Topics 字符串
+[解题源码](_6_ZStringConvert.java)
 ### 整数反转(7)
 题目描述：
 
 &emsp;&emsp;给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转
-[解题源码](ReverseInt.java)
+[解题源码](_7_ReverseInt.java)
 ### 字符串转换整数 (atoi)(8)
 题目描述：
 
 &emsp;&emsp;请你来实现一个 atoi 函数，使其能将字符串转换成整数。
-[解题源码](StringToInt.java)
+[解题源码](_8_StringToInt.java)
 ### 回文数(9)
 题目描述：
 
 &emsp;&emsp;判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数
-[解题源码](PalindromeInt.java)
+[解题源码](_9_PalindromeInt.java)
 ### 10. 正则表达式匹配
 题目描述：
 
@@ -70,14 +74,21 @@
     s 可能为空，且只包含从 a-z 的小写字母。
     p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 *。
 
-[解题源码](TwoStringIsMatch.java)
+[解题源码](_10_TwoStringIsMatch.java)
 ### 11. 盛最多水的容器
 题目描述：
 
-&emsp;&emsp;给定 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。
-在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。
-找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水
-[解题源码](MaxArea.java)
+&emsp;&emsp;  给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i,
+ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+
+ 说明：你不能倾斜容器，且 n 的值至少为 2。
+ 图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。
+ 示例：
+
+ 输入：[1,8,6,2,5,4,8,3,7]
+输出：49
+ Related Topics 数组 双指针
+[解题源码](_11_ContainerWithMostWater.java)
 ### 12. 整数转罗马数字
 题目描述：
 
@@ -99,7 +110,7 @@ I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。
 X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。 
 C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
 给定一个整数，将其转为罗马数字。输入确保在 1 到 3999 的范围内。
-[解题源码](IntToRoman.java)
+[解题源码](_12_IntToRoman.java)
 ### 13. 罗马数字转整数
 题目描述：
 
@@ -121,18 +132,18 @@ I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。
 X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。 
 C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
 给定一个整数，将其转为罗马数字。输入确保在 1 到 3999 的范围内。
-[解题源码](RomanToInt.java)
+[解题源码](_13_RomanToInt.java)
 ### 14. 最长公共前缀
 题目描述：
 
 &emsp;&emsp;编写一个函数来查找字符串数组中的最长公共前缀。如果不存在公共前缀，返回空字符串 ""
-[解题源码](LongestCommonPrefix.java)
+[解题源码](_14_LongestCommonPrefix.java)
 ### 15. 三数之和
 题目描述：
 
 &emsp;&emsp;给定一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？找出所有满足条件且不重复的三元组。
 注意：答案中不可以包含重复的三元组。
-[解题源码](ThreeSum.java)
+[解题源码](_15_ThreeSum.java)
 ### 16. 最接近的三数之和
 题目描述：
 
@@ -140,7 +151,7 @@ C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
 
     例如，给定数组 nums = [-1，2，1，-4], 和 target = 1.
     与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).
-[解题源码](ThreeSumClosest.java)
+[解题源码](_16_ThreeSumClosest.java)
 ### 17. 电话号码的字母组合
 题目描述：
 
@@ -1889,6 +1900,634 @@ Related Topics 树 深度优先搜索
  返回它的最大深度 3 。
  Related Topics 树 深度优先搜索
 [解题源码](_104_MaximumDepthOfBinaryTree.java)
+### 105. Construct Binary Tree from Preorder and Inorder Traversal
+题目描述：
+
+&emsp;&emsp;根据一棵树的前序遍历与中序遍历构造二叉树。
+
+ 注意:
+你可以假设树中没有重复的元素。
+
+ 例如，给出
+
+ 前序遍历 preorder = [3,9,20,15,7]
+中序遍历 inorder = [9,3,15,20,7]
+
+ 返回如下的二叉树：
+
+     3
+   / \
+  9  20
+    /  \
+   15   7
+ Related Topics 树 深度优先搜索 数组
+[解题源码](_105_ConstructBinaryTreeFromPreorderAndInorderTraversal.java)
+### 106. Construct Binary Tree from Inorder and Postorder Traversal
+题目描述：
+
+&emsp;&emsp;根据一棵树的中序遍历与后序遍历构造二叉树。
+
+ 注意:
+你可以假设树中没有重复的元素。
+
+ 例如，给出
+
+ 中序遍历 inorder = [9,3,15,20,7]
+后序遍历 postorder = [9,15,7,20,3]
+
+ 返回如下的二叉树：
+
+     3
+   / \
+  9  20
+    /  \
+   15   7
+
+ Related Topics 树 深度优先搜索 数组
+[解题源码](_106_ConstructBinaryTreeFromInorderAndPostorderTraversal.java)
+### 107. Binary Tree Level Order Traversal II
+题目描述：
+
+&emsp;&emsp;给定一个二叉树，返回其节点值自底向上的层次遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）
+
+例如：
+给定二叉树 [3,9,20,null,null,15,7],
+
+ 3
+/ \
+9  20
+/  \
+15   7
+
+
+返回其自底向上的层次遍历为：
+
+[
+[15,7],
+[9,20],
+[3]
+]
+
+Related Topics 树 广度优先搜索
+[解题源码](_107_BinaryTreeLevelOrderTraversalIi.java)
+### 108. Convert Sorted Array to Binary Search Tree
+题目描述：
+
+&emsp;&emsp;将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。
+
+ 本题中，一个高度平衡二叉树是指一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
+
+ 示例:
+
+ 给定有序数组: [-10,-3,0,5,9],
+
+一个可能的答案是：[0,-3,9,-10,null,5]，它可以表示下面这个高度平衡二叉搜索树：
+
+      0
+     / \
+   -3   9
+   /   /
+ -10  5
+
+ Related Topics 树 深度优先搜索
+[解题源码](_108_ConvertSortedArrayToBinarySearchTree.java)
+### 109. Convert Sorted List to Binary Search Tree
+题目描述：
+
+&emsp;&emsp;给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。
+
+本题中，一个高度平衡二叉树是指一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
+
+示例:
+
+给定的有序链表： [-10, -3, 0, 5, 9],
+
+一个可能的答案是：[0, -3, 9, -10, null, 5], 它可以表示下面这个高度平衡二叉搜索树：
+
+  0
+ / \
+-3   9
+/   /
+-10  5
+
+Related Topics 深度优先搜索 链表
+[解题源码](_109_ConvertSortedListToBinarySearchTree.java)
+### 110. Balanced Binary Tree
+题目描述：
+
+&emsp;&emsp;给定一个二叉树，判断它是否是高度平衡的二叉树。
+
+ 本题中，一棵高度平衡二叉树定义为：
+
+
+ 一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过1。
+
+
+ 示例 1:
+
+ 给定二叉树 [3,9,20,null,null,15,7]
+
+     3
+   / \
+  9  20
+    /  \
+   15   7
+
+ 返回 true 。
+
+示例 2:
+
+ 给定二叉树 [1,2,2,3,3,null,null,4,4]
+
+        1
+      / \
+     2   2
+    / \
+   3   3
+  / \
+ 4   4
+
+
+ 返回 false 。
+
+
+ Related Topics 树 深度优先搜索
+[解题源码](_110_BalancedBinaryTree.java)
+### 112. Path Sum
+题目描述：
+
+&emsp;&emsp;给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。
+
+ 说明: 叶子节点是指没有子节点的节点。
+
+ 示例:
+给定如下二叉树，以及目标和 sum = 22，
+
+               5
+             / \
+            4   8
+           /   / \
+          11  13  4
+         /  \      \
+        7    2      1
+
+
+ 返回 true, 因为存在目标和为 22 的根节点到叶子节点的路径 5->4->11->2。
+ Related Topics 树 深度优先搜索
+[解题源码](_112_PathSum.java)
+### 113. Path Sum II
+题目描述：
+
+&emsp;&emsp;给定一个二叉树和一个目标和，找到所有从根节点到叶子节点路径总和等于给定目标和的路径。
+
+ 说明: 叶子节点是指没有子节点的节点。
+
+ 示例:
+给定如下二叉树，以及目标和 sum = 22，
+
+               5
+             / \
+            4   8
+           /   / \
+          11  13  4
+         /  \    / \
+        7    2  5   1
+
+
+ 返回:
+
+ [
+   [5,4,11,2],
+   [5,8,4,5]
+]
+
+ Related Topics 树 深度优先搜索
+[解题源码](_113_PathSumIi.java)
+### 114. Flatten Binary Tree to Linked List
+题目描述：
+
+&emsp;&emsp;给定一个二叉树，原地将它展开为一个单链表。
+
+ 例如，给定二叉树
+
+     1
+   / \
+  2   5
+ / \   \
+3   4   6
+
+ 将其展开为：
+
+ 1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5
+         \
+          6
+ Related Topics 树 深度优先搜索
+[解题源码](_114_FlattenBinaryTreeToLinkedList.java)
+### 116. Populating Next Right Pointers in Each Node
+题目描述：
+
+&emsp;&emsp;给定一个完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：
+
+ struct Node {
+  int val;
+  Node *left;
+  Node *right;
+  Node *next;
+}
+
+ 填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。
+
+ 初始状态下，所有 next 指针都被设置为 NULL。
+
+
+
+ 示例：
+
+
+
+ 输入：{"$id":"1","left":{"$id":"2","left":{"$id":"3","left":null,"next":null,"right":null,"val":4},"next":null,"right":{"$id":"4","left":null,"next":null,"right":null,"val":5},"val":2},"next":null,"right":{"$id":"5","left":{"$id":"6","left":null,"next":null,"right":null,"val":6},"next":null,"right":{"$id":"7","left":null,"next":null,"right":null,"val":7},"val":3},"val":1}
+
+输出：{"$id":"1","left":{"$id":"2","left":{"$id":"3","left":null,"next":{"$id":"4","left":null,"next":{"$id":"5","left":null,"next":{"$id":"6","left":null,"next":null,"right":null,"val":7},"right":null,"val":6},"right":null,"val":5},"right":null,"val":4},"next":{"$id":"7","left":{"$ref":"5"},"next":null,"right":{"$ref":"6"},"val":3},"right":{"$ref":"4"},"val":2},"next":null,"right":{"$ref":"7"},"val":1}
+
+解释：给定二叉树如图 A 所示，你的函数应该填充它的每个 next 指针，以指向其下一个右侧节点，如图 B 所示。
+
+
+
+
+ 提示：
+
+
+ 你只能使用常量级额外空间。
+ 使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。
+
+ Related Topics 树 深度优先搜索
+[解题源码](_116_PopulatingNextRightPointersInEachNode.java)
+### 117. Populating Next Right Pointers in Each Node II
+题目描述：
+
+&emsp;&emsp;给定一个完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：
+
+ struct Node {
+  int val;
+  Node *left;
+  Node *right;
+  Node *next;
+}
+
+ 填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。
+
+ 初始状态下，所有 next 指针都被设置为 NULL。
+
+
+
+ 示例：
+
+
+
+ 输入：{"$id":"1","left":{"$id":"2","left":{"$id":"3","left":null,"next":null,"right":null,"val":4},"next":null,"right":{"$id":"4","left":null,"next":null,"right":null,"val":5},"val":2},"next":null,"right":{"$id":"5","left":{"$id":"6","left":null,"next":null,"right":null,"val":6},"next":null,"right":{"$id":"7","left":null,"next":null,"right":null,"val":7},"val":3},"val":1}
+
+输出：{"$id":"1","left":{"$id":"2","left":{"$id":"3","left":null,"next":{"$id":"4","left":null,"next":{"$id":"5","left":null,"next":{"$id":"6","left":null,"next":null,"right":null,"val":7},"right":null,"val":6},"right":null,"val":5},"right":null,"val":4},"next":{"$id":"7","left":{"$ref":"5"},"next":null,"right":{"$ref":"6"},"val":3},"right":{"$ref":"4"},"val":2},"next":null,"right":{"$ref":"7"},"val":1}
+
+解释：给定二叉树如图 A 所示，你的函数应该填充它的每个 next 指针，以指向其下一个右侧节点，如图 B 所示。
+
+
+
+
+ 提示：
+
+
+ 你只能使用常量级额外空间。
+ 使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。
+
+ Related Topics 树 深度优先搜索
+[解题源码](_117_PopulatingNextRightPointersInEachNodeIi.java)
+### 118. Pascal's Triangle
+题目描述：
+
+&emsp;&emsp;给定一个非负整数 numRows，生成杨辉三角的前 numRows 行。
+
+
+
+ 在杨辉三角中，每个数是它左上方和右上方的数的和。
+
+ 示例:
+
+ 输入: 5
+输出:
+[
+     [1],
+    [1,1],
+   [1,2,1],
+  [1,3,3,1],
+ [1,4,6,4,1]
+]
+ Related Topics 数组
+[解题源码](_118_PascalsTriangle.java)
+### 119. Pascal's Triangle II
+题目描述：
+
+&emsp;&emsp;给定一个非负整数 numRows，生成杨辉三角的前 numRows 行。
+
+
+
+ 在杨辉三角中，每个数是它左上方和右上方的数的和。
+
+ 示例:
+
+ 输入: 5
+输出:
+[
+     [1],
+    [1,1],
+   [1,2,1],
+  [1,3,3,1],
+ [1,4,6,4,1]
+]
+ Related Topics 数组
+[解题源码](_119_PascalsTriangleIi.java)
+### 120. Triangle
+题目描述：
+
+&emsp;&emsp;给定一个三角形，找出自顶向下的最小路径和。每一步只能移动到下一行中相邻的结点上。
+
+ 相邻的结点 在这里指的是 下标 与 上一层结点下标 相同或者等于 上一层结点下标 + 1 的两个结点。
+
+
+
+ 例如，给定三角形：
+
+ [
+     [2],
+    [3,4],
+   [6,5,7],
+  [4,1,8,3]
+]
+
+
+ 自顶向下的最小路径和为 11（即，2 + 3 + 5 + 1 = 11）。
+
+
+
+ 说明：
+
+ 如果你可以只使用 O(n) 的额外空间（n 为三角形的总行数）来解决这个问题，那么你的算法会很加分。
+ Related Topics 数组 动态规划
+[解题源码](_120_Triangle.java)
+### 121. Best Time to Buy and Sell Stock
+题目描述：
+
+&emsp;&emsp;给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
+
+ 如果你最多只允许完成一笔交易（即买入和卖出一支股票一次），设计一个算法来计算你所能获取的最大利润。
+
+ 注意：你不能在买入股票前卖出股票。
+
+ 示例 1:
+
+ 输入: [7,1,5,3,6,4]
+输出: 5
+解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
+     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。
+
+
+ 示例 2:
+
+ 输入: [7,6,4,3,1]
+输出: 0
+解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
+
+ Related Topics 数组 动态规划
+[解题源码](_121_BestTimeToBuyAndSellStock.java)
+### 122. Best Time to Buy and Sell Stock II
+题目描述：
+
+&emsp;&emsp;给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
+
+ 设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。
+
+ 注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
+
+
+
+ 示例 1:
+
+ 输入: [7,1,5,3,6,4]
+输出: 7
+解释: 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。
+     随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6-3 = 3 。
+
+
+ 示例 2:
+
+ 输入: [1,2,3,4,5]
+输出: 4
+解释: 在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。
+     注意你不能在第 1 天和第 2 天接连购买股票，之后再将它们卖出。
+     因为这样属于同时参与了多笔交易，你必须在再次购买前出售掉之前的股票。
+
+
+ 示例 3:
+
+ 输入: [7,6,4,3,1]
+输出: 0
+解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
+
+
+
+ 提示：
+
+
+ 1 <= prices.length <= 3 * 10 ^ 4
+ 0 <= prices[i] <= 10 ^ 4
+
+ Related Topics 贪心算法 数组
+[解题源码](_122_BestTimeToBuyAndSellStockIi.java)
+### 123. Best Time to Buy and Sell Stock III
+题目描述：
+
+&emsp;&emsp;给定一个数组，它的第 i 个元素是一支给定的股票在第 i 天的价格。
+
+ 设计一个算法来计算你所能获取的最大利润。你最多可以完成 两笔 交易。
+
+ 注意: 你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
+
+ 示例 1:
+
+ 输入: [3,3,5,0,0,3,1,4]
+输出: 6
+解释: 在第 4 天（股票价格 = 0）的时候买入，在第 6 天（股票价格 = 3）的时候卖出，这笔交易所能获得利润 = 3-0 = 3 。
+     随后，在第 7 天（股票价格 = 1）的时候买入，在第 8 天 （股票价格 = 4）的时候卖出，这笔交易所能获得利润 = 4-1 = 3 。
+
+ 示例 2:
+
+ 输入: [1,2,3,4,5]
+输出: 4
+解释: 在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。  
+     注意你不能在第 1 天和第 2 天接连购买股票，之后再将它们卖出。  
+     因为这样属于同时参与了多笔交易，你必须在再次购买前出售掉之前的股票。
+
+
+ 示例 3:
+
+ 输入: [7,6,4,3,1]
+输出: 0
+解释: 在这个情况下, 没有交易完成, 所以最大利润为 0。
+ Related Topics 数组 动态规划
+[解题源码](_123_BestTimeToBuyAndSellStockIii.java)
+### 125. Valid Palindrome
+题目描述：
+
+&emsp;&emsp;给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。
+
+ 说明：本题中，我们将空字符串定义为有效的回文串。
+
+ 示例 1:
+
+ 输入: "A man, a plan, a canal: Panama"
+输出: true
+
+
+ 示例 2:
+
+ 输入: "race a car"
+输出: false
+
+ Related Topics 双指针 字符串
+[解题源码](_125_ValidPalindrome.java)
+### 127. Word Ladder
+题目描述：
+
+&emsp;&emsp;给定两个单词（beginWord 和 endWord）和一个字典，找到从 beginWord 到 endWord 的最短转换序列的长度。转换需遵循如下规则：
+
+
+ 每次转换只能改变一个字母。
+ 转换过程中的中间单词必须是字典中的单词。
+
+
+ 说明:
+
+
+ 如果不存在这样的转换序列，返回 0。
+ 所有单词具有相同的长度。
+ 所有单词只由小写字母组成。
+ 字典中不存在重复的单词。
+ 你可以假设 beginWord 和 endWord 是非空的，且二者不相同。
+
+
+ 示例 1:
+
+ 输入:
+beginWord = "hit",
+endWord = "cog",
+wordList = ["hot","dot","dog","lot","log","cog"]
+
+输出: 5
+
+解释: 一个最短转换序列是 "hit" -> "hot" -> "dot" -> "dog" -> "cog",
+     返回它的长度 5。
+
+
+ 示例 2:
+
+ 输入:
+beginWord = "hit"
+endWord = "cog"
+wordList = ["hot","dot","dog","lot","log"]
+
+输出: 0
+
+解释: endWord "cog" 不在字典中，所以无法进行转换。
+ Related Topics 广度优先搜索
+[解题源码](_127_WordLadder.java)
+### 128. Longest Consecutive Sequence
+题目描述：
+
+&emsp;&emsp;给定一个未排序的整数数组，找出最长连续序列的长度。
+
+ 要求算法的时间复杂度为 O(n)。
+
+ 示例:
+
+ 输入: [100, 4, 200, 1, 3, 2]
+输出: 4
+解释: 最长连续序列是 [1, 2, 3, 4]。它的长度为 4。
+ Related Topics 并查集 数组
+[解题源码](_128_LongestConsecutiveSequence.java)
+### 129. Sum Root to Leaf Numbers
+题目描述：
+
+&emsp;&emsp;给定一个二叉树，它的每个结点都存放一个 0-9 的数字，每条从根到叶子节点的路径都代表一个数字。
+
+ 例如，从根到叶子节点路径 1->2->3 代表数字 123。
+
+ 计算从根到叶子节点生成的所有数字之和。
+
+ 说明: 叶子节点是指没有子节点的节点。
+
+ 示例 1:
+
+ 输入: [1,2,3]
+    1
+   / \
+  2   3
+输出: 25
+解释:
+从根到叶子节点路径 1->2 代表数字 12.
+从根到叶子节点路径 1->3 代表数字 13.
+因此，数字总和 = 12 + 13 = 25.
+
+ 示例 2:
+
+ 输入: [4,9,0,5,1]
+    4
+   / \
+  9   0
+ / \
+5   1
+输出: 1026
+解释:
+从根到叶子节点路径 4->9->5 代表数字 495.
+从根到叶子节点路径 4->9->1 代表数字 491.
+从根到叶子节点路径 4->0 代表数字 40.
+因此，数字总和 = 495 + 491 + 40 = 1026.
+ Related Topics 树 深度优先搜索
+[解题源码](_129_SumRootToLeafNumbers.java)
+### 130. Surrounded Regions
+题目描述：
+
+&emsp;&emsp;给定一个二维的矩阵，包含 'X' 和 'O'（字母 O）。
+
+ 找到所有被 'X' 围绕的区域，并将这些区域里所有的 'O' 用 'X' 填充。
+
+ 示例:
+
+ X X X X
+X O O X
+X X O X
+X O X X
+
+
+ 运行你的函数后，矩阵变为：
+
+ X X X X
+X X X X
+X X X X
+X O X X
+
+
+ 解释:
+
+ 被围绕的区间不会存在于边界上，换句话说，任何边界上的 'O' 都不会被填充为 'X'。 任何不在边界上，或不与边界上的 'O' 相连的 'O' 最终都会被填充为 'X'。如果两个元素在水平或垂直方向相邻，则称它们是“相连”的。
+ Related Topics 深度优先搜索 广度优先搜索 并查集
+[解题源码](_130_SurroundedRegions.java)
 
 
 
