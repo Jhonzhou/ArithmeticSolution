@@ -31,11 +31,14 @@ import org.junit.Test;
  * <p>
  * 题目理解  下一个报上一个的数字个数和顺序
  */
-public class CountAndSay {
+public class _38_CountAndSay {
     @Test
     public void test() {
-        int number = 6;
-        PrintUtils.println(countAndSay(number));
+        int number = 7;
+        for (int i = 1; i < number; i++) {
+            PrintUtils.println(countAndSay(i));
+        }
+
     }
 
     public String countAndSay(int n) {

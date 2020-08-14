@@ -30,7 +30,7 @@ import org.junit.Test;
  * 输出: 0
  * ```
  */
-public class SearchLocationToInsert {
+public class _35_SearchLocationToInsert {
     @Test
     public void test() {
         int[] nums = {1, 3, 5, 6};

@@ -22,7 +22,7 @@ import org.junit.Test;
  * 除数不为 0。
  * 假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−231,  231 − 1]。本题中，如果除法结果溢出，则返回 231 − 1。
  */
-public class DivideTwoInt {
+public class _29_DivideTwoInt {
     @Test
     public void test() {
         int dividend = 10, divisor = 3;

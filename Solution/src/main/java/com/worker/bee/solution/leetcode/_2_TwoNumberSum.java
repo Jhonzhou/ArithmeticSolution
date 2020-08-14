@@ -28,6 +28,26 @@ public class _2_TwoNumberSum {
 
         ListNode listNode = addTwoNumbers(l1, l2);
         PrintUtils.println(Arrays.asList(listNodeToArray(listNode)));
+        twoSum(new int[]{3,2,4},6);
+    }
+    public int[] twoSum (int[] numbers, int target) {
+        // write code here
+        int[] result=null;
+        if(numbers.length<=0){
+            return result;
+        }
+        ArrayList temp=new ArrayList(numbers.length);
+        for(int index=0;index<numbers.length;index++){
+            int x=target-numbers[index];
+            if(temp.contains(numbers[index])){
+                result=new int[2];
+                result[0]=temp.indexOf(numbers[index]+1);
+                result[1]=index+1;
+            }else{
+                temp.add(x);
+            }
+        }
+        return result;
     }
 
     private ListNode addTwoNumbers(ListNode l1, ListNode l2) {

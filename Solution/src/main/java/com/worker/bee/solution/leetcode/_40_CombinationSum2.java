@@ -34,7 +34,7 @@ import java.util.List;
  * [5]
  * ]
  */
-public class CombinationSum2 {
+public class _40_CombinationSum2 {
     @Test
     public void test() {
         int[] candidates = new int[]{2, 5, 2, 1, 2};

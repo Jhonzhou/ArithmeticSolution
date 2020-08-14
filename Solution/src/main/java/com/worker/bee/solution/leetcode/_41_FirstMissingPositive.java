@@ -24,16 +24,41 @@ import java.util.Arrays;
  * 输出: 1
  * 你的算法的时间复杂度应为O(n)，并且只能使用常数级别的空间。
  */
-public class FirstMissingPositive {
+public class _41_FirstMissingPositive {
     @Test
     public void test() {
 //        int[] nums = new int[]{1, 0, 2};
         int[] nums = new int[]{3, 4, -1, 1};
-        PrintUtils.println(firstMissingPositive(nums));
-        PrintUtils.println(new Server().firstMissingPositive(nums));
+//        PrintUtils.println(firstMissingPositive(nums));
+        PrintUtils.println(new SolutionServer1().firstMissingPositive(nums));
     }
 
     public int firstMissingPositive(int[] nums) {
+        int result = 0;
+        int length = nums.length;
+        for (int i = 0; i < length; i++) {
+            int current = nums[i];
+            if (current < 0) {
+                current = -1;
+                continue;
+            }
+            if (current <= length) {
+
+                while (nums[current] <= length) {
+                    nums[current] = current;
+                    current = nums[current];
+                }
+
+            }
+
+        }
+        return result;
+    }
+
+    /**
+     * 暴力办法
+     */
+    public int firstMissingPositiveSelf(int[] nums) {
         int result = 1;
         Arrays.sort(nums);
         for (int index = 0; index < nums.length; index++) {
@@ -45,6 +70,29 @@ public class FirstMissingPositive {
             }
         }
         return result;
+    }
+
+    class SolutionServer1 {
+        public int firstMissingPositive(int[] nums) {
+            int n = nums.length;
+            for (int i = 0; i < n; ++i) {
+                if (nums[i] <= 0) {
+                    nums[i] = n + 1;
+                }
+            }
+            for (int i = 0; i < n; ++i) {
+                int num = Math.abs(nums[i]);
+                if (num <= n) {
+                    nums[num - 1] = -Math.abs(nums[num - 1]);
+                }
+            }
+            for (int i = 0; i < n; ++i) {
+                if (nums[i] > 0) {
+                    return i + 1;
+                }
+            }
+            return n + 1;
+        }
     }
 
     public class Server {

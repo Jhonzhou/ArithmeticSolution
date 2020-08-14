@@ -19,7 +19,7 @@ import java.util.Arrays;
  * 3,2,1 → 1,2,3
  * 1,1,5 → 1,5,1
  */
-public class NextPermutation {
+public class _31_NextPermutation {
     @Test
     public void test() {
         int[] nums = new int[]{0, 2, 5, 3, 2, 1};

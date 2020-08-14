@@ -23,7 +23,7 @@ import java.util.HashSet;
  * 给定数独序列只包含数字 1-9 和字符 '.' 。
  * 给定数独永远是 9x9 形式的。
  */
-public class SolveSudoku {
+public class _37_SolveSudoku {
     @Test
     public void test() {
         char[][] board = {

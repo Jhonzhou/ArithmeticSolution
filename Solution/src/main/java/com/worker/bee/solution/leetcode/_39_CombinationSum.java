@@ -37,8 +37,9 @@ import java.util.Stack;
  *   [3,5]
  * ]
  * ```
+ * Related Topics 数组 回溯算法
  */
-public class CombinationSum {
+public class _39_CombinationSum {
     @Test
     public void test() {
         int[] candidates = new int[]{2, 3, 5};

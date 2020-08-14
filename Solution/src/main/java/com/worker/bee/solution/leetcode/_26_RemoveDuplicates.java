@@ -43,7 +43,7 @@ import org.junit.Test;
  *     print(nums[i]);
  * }
  */
-public class RemoveDuplicates {
+public class _26_RemoveDuplicates {
     @Test
     public void test() {
         int[] ints = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};

@@ -22,8 +22,11 @@ import java.util.Map;
  * 输出：["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
  * 说明:
  * 尽管上面的答案是按字典序排列的，但是你可以任意选择答案输出的顺序。
+ * // 说明:
+ * //尽管上面的答案是按字典序排列的，但是你可以任意选择答案输出的顺序。
+ * // Related Topics 字符串 回溯算法
  */
-public class LetterCombinations {
+public class _17_LetterCombinations {
     @Test
     public void test() {
         String number = "23";

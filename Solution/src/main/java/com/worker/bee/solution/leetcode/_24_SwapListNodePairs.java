@@ -18,7 +18,7 @@ import java.util.Arrays;
  * <p>
  * 给定 1->2->3->4, 你应该返回 2->1->4->3.
  */
-public class SwapListNodePairs {
+public class _24_SwapListNodePairs {
     @Test
     public void test() {
         ListNode listNode = ListNode.createByArray(new int[]{1, 2, 3, 4});

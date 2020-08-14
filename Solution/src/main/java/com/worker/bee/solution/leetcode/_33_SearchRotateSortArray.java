@@ -22,7 +22,7 @@ import org.junit.Test;
  * 输入: nums = [4,5,6,7,0,1,2], target = 3
  * 输出: -1
  */
-public class SearchRotateSortArray {
+public class _33_SearchRotateSortArray {
     @Test
     public void test() {
         int[] nums = {4, 5, 6, 7, 0, 1, 2};

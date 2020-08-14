@@ -26,8 +26,9 @@ import java.util.Set;
  * "()()()"
  * ]
  * "()"   "()()","(())"
+ * Related Topics 字符串 回溯算法
  */
-public class BracketCreate {
+public class _22_BracketCreate {
     @Test
     public void test() {
         int n = 4;

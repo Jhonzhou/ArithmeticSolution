@@ -23,7 +23,7 @@ import java.util.Arrays;
  * 输入: nums = [5,7,7,8,8,10], target = 6
  * 输出: [-1,-1]
  */
-public class SearchRangeFirstAndEnd {
+public class _34_SearchRangeFirstAndEnd {
     @Test
     public void test() {
         int[] nums = {5, 7, 7, 8, 8, 10};

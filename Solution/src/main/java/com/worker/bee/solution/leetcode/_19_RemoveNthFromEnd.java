@@ -21,8 +21,9 @@ import java.util.List;
  * 给定的 n 保证是有效的。
  * 进阶：
  * 你能尝试使用一趟扫描实现吗？
+ * Related Topics 链表 双指针
  */
-public class RemoveNthFromEnd {
+public class _19_RemoveNthFromEnd {
     @Test
     public void test() {
         int[] numbers = new int[]{1, 2, 3, 4, 5};

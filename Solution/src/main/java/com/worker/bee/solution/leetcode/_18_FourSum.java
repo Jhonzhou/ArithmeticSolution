@@ -18,8 +18,9 @@ import java.util.List;
  * <p>
  * 注意：
  * 答案中不可以包含重复的四元组。
+ * Related Topics 数组 哈希表 双指针
  */
-public class FourSum {
+public class _18_FourSum {
     @Test
     public void test() {
         int[] numbers = {-1, 0, -5, -2, -2, -4, 0, 1, -2};

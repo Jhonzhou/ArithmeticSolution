@@ -22,15 +22,42 @@ import java.util.Stack;
  * 输出: 4
  * 解释: 最长有效括号子串为 "()()
  */
-public class LongestValidParentheses {
+public class _32_LongestValidParentheses {
     @Test
     public void test() {
         String s = "()))";
-        PrintUtils.println(longestValidParenthesesServer(s));
+        PrintUtils.println(longestValidParentheses222(s));
 //        PrintUtils.println(longestValidParentheses(s));
 
     }
 
+
+    public int longestValidParentheses222(String s) {
+        if (s == null) {
+            return 0;
+        }
+        int maxLength = 0;
+        int[] tempArray = new int[s.length()];
+        char[] chars = s.toCharArray();
+        char current;
+        int preIndex, preLength;
+        for (int index = 1; index < chars.length; index++) {
+            current = chars[index];
+            if (current == ')') {
+                preLength = tempArray[index - 1];
+                preIndex = index - 1 - preLength;
+                if (preIndex >= 0 && chars[preIndex] == '(') {
+                    tempArray[index] = preLength + 2;
+                    if (preIndex > 1) {
+                        tempArray[index] = tempArray[index] + tempArray[preIndex - 1];
+                    }
+                }
+            }
+            maxLength = Math.max(maxLength, tempArray[index]);
+        }
+        return maxLength;
+
+    }
     /**
      * 前后遍历解决问题
      */
