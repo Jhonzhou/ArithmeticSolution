@@ -35,11 +35,13 @@ public class _6_ZStringConvert {
             return s;
         }
         int length = s.length();
+
         StringBuilder result = new StringBuilder(length);
         List<StringBuilder> tempList = new ArrayList<>();
         for (int i = 0; i < numRows; i++) {
             tempList.add(new StringBuilder());
         }
+
         int row = 0;
         boolean flag = false;
         char[] chars = s.toCharArray();
